@@ -5,7 +5,8 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "compile": "tsc -b ./tsconfig.json"
+    "compile": "tsc -b ./tsconfig.json",
+    "publish": "npm publish --registry=https://registry.npmjs.org/ --access=public"
   },
   "repository": {
     "type": "git",
