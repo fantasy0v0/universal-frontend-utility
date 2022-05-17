@@ -1,0 +1,33 @@
+{
+  "name": "@fantasy0v0/universal-frontend-utility",
+  "version": "0.0.1",
+  "description": "封装一些常用的前端方法",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "compile": "tsc -b ./tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fantasy0v0/universal-frontend-utility.git"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "author": "fantasy0v0",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/fantasy0v0/universal-frontend-utility/issues"
+  },
+  "homepage": "https://github.com/fantasy0v0/universal-frontend-utility#readme",
+  "dependencies": {
+    "@angular/common": "^13.3.8",
+    "@angular/core": "^13.3.8",
+    "@angular/forms": "^13.3.8",
+    "@angular/platform-browser": "^13.3.8",
+    "rxjs": "^7.5.5",
+    "typescript": "^4.6.4",
+    "zone.js": "^0.11.5"
+  },
+  "devDependencies": {}
+}
