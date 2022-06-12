@@ -1,9 +1,11 @@
 {
   "name": "@fantasy0v0/universal-frontend-utility",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "description": "封装一些常用的前端方法",
-  "main": "./index.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
+    "prepublish": "tsc",
     "publish": "npm publish --registry=https://registry.npmjs.org/ --access=public"
   },
   "repository": {
@@ -20,13 +22,16 @@
   },
   "homepage": "https://github.com/fantasy0v0/universal-frontend-utility#readme",
   "peerDependencies": {
+    "@angular/core": "^14.0.0",
     "@angular/common": "^14.0.0",
     "@angular/forms": "^14.0.0",
     "rxjs": "^6.5.3 || ^7.4.0"
   },
   "devDependencies": {
+    "@angular/core": "^14.0.0",
     "@angular/common": "^14.0.0",
     "@angular/forms": "^14.0.0",
-    "rxjs": "^6.5.3 || ^7.4.0"
+    "rxjs": "^6.5.3 || ^7.4.0",
+    "typescript": "~4.7.3"
   }
 }

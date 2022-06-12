@@ -1,0 +1,10 @@
+.DS_Store
+.git
+.gitignore
+.npmignore
+CVS
+npm-debug.log
+.idea
+pnpm-lock.yaml
+node_modules/
+src/
