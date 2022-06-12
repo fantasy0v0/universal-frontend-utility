@@ -70,11 +70,15 @@ export function errorMessage(err: any, topic?: string) {
 }
 
 /**
- * 判断接口响应是否成功
- * @param result
+ * 判断接口响应是否成功, 如果成功则返回结果中的data, 如果失败则抛出异常
+ * @param result 响应结果
+ * @return 返回响应结果中的data
  */
 export function checkResult<T>(result: Result<T>) {
-  return "0" === result.code;
+  if ("0" !== result.code) {
+    throw new Exception(result.msg);
+  }
+  return result.data;
 }
 
 /**

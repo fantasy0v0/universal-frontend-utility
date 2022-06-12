@@ -1,6 +1,6 @@
 {
   "name": "@fantasy0v0/universal-frontend-utility",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "封装一些常用的前端方法",
   "main": "./index.ts",
   "scripts": {
