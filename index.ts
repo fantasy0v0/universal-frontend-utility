@@ -1,9 +1,9 @@
 /**
  * 异常
  */
-import { catchError } from "rxjs";
 import { FormGroup } from "@angular/forms";
 import { HttpParams } from "@angular/common/http";
+import { catchError } from "rxjs/operators";
 
 export class Exception {
 
