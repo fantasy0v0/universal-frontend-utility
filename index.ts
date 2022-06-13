@@ -1,10 +1,10 @@
-/**
- * 异常
- */
-import { FormGroup } from "@angular/forms";
+import { FormArray, FormGroup } from "@angular/forms";
 import { HttpParams } from "@angular/common/http";
 import { catchError } from "rxjs/operators";
 
+/**
+ * 异常
+ */
 export class Exception {
 
   constructor(private _msg?: string, private _err?: Error) {}
@@ -105,7 +105,7 @@ export class Paging {
 
   public toHttpParams() {
     let params = new HttpParams();
-    // 后台接口pageNum是从0开始
+    // 后台接口pageNumber是从0开始
     let pageNumber;
     if (this.pageNumber > 0) {
       pageNumber = this.pageNumber - 1;
@@ -142,12 +142,41 @@ export class PagingResult<T> {
  */
 export function formGroupInvalid(form: FormGroup) {
   // 主动校验
-  for (const key in form.controls) {
-    if (null != key) {
-      const control = form.controls[key];
+  _formGroupValid(form);
+  return form.invalid;
+}
+
+/**
+ * 将FormGroup中的所有Control标记为Dirty
+ * @param formGroup formGroup
+ */
+function _formGroupValid(formGroup: FormGroup) {
+  for (const key in formGroup.controls) {
+    const control = formGroup.controls[key];
+    if (control instanceof FormArray) {
+      _formArrayValid(control);
+    } else if (control instanceof FormGroup) {
+      _formGroupValid(control);
+    } else {
       control.markAsDirty();
       control.updateValueAndValidity();
     }
   }
-  return form.invalid;
+}
+
+/**
+ * 将FormArray中的所有Control标记为Dirty
+ * @param array array
+ */
+function _formArrayValid(array: FormArray) {
+  for (const control of array.controls) {
+    if (control instanceof FormArray) {
+      _formArrayValid(control);
+    } else if (control instanceof FormGroup) {
+      _formGroupValid(control);
+    } else {
+      control.markAsDirty();
+      control.updateValueAndValidity();
+    }
+  }
 }
