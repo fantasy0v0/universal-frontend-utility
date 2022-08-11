@@ -13,6 +13,10 @@ export class Exception {
     return this._msg ? this._msg : "";
   }
 
+  get error() {
+    return this._err;
+  }
+
   printStackTrace() {
     if (this._err && this._err.stack) {
       console.error(this._err.stack);

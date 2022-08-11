@@ -1,37 +1,37 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@angular/common': ^14.0.0
-  '@angular/core': ^14.0.0
-  '@angular/forms': ^14.0.0
+  '@angular/common': ^14.1.2
+  '@angular/core': ^14.1.2
+  '@angular/forms': ^14.1.2
   jasmine: ^4.2.0
-  rxjs: ^6.5.3 || ^7.4.0
+  rxjs: ~7.5.0
   typescript: ~4.7.3
 
 devDependencies:
-  '@angular/common': 14.0.1_sc2cxsu4vfcn33t2tbzpvm4ohe
-  '@angular/core': 14.0.1_rxjs@7.5.5
-  '@angular/forms': 14.0.1_x4j7wrj2gwckj73g5cgp5mf2fu
+  '@angular/common': 14.1.2_zxu6kynelzm47wrpz4hiraa5fu
+  '@angular/core': 14.1.2_rxjs@7.5.5
+  '@angular/forms': 14.1.2_ibavr2nblubibhb7uxag5odlai
   jasmine: 4.2.0
   rxjs: 7.5.5
   typescript: 4.7.3
 
 packages:
 
-  /@angular/common/14.0.1_sc2cxsu4vfcn33t2tbzpvm4ohe:
-    resolution: {integrity: sha512-6yT95daze55H0KLag+LgQQMGV7jGy3ggcdIEEU9H+cM4rp37kz97RNGaig5p34c1f/VMg6LaDXOK4LjAebbnBw==}
+  /@angular/common/14.1.2_zxu6kynelzm47wrpz4hiraa5fu:
+    resolution: {integrity: sha512-ukj/BAF3cH8IDrrMt7MLjosKst005YGD0EpLNpdTNdHN8NrF3OrEYyR7YR7obrucjJ8fowsz9V7a8OrNrHaS4w==}
     engines: {node: ^14.15.0 || >=16.10.0}
     peerDependencies:
-      '@angular/core': 14.0.1
+      '@angular/core': 14.1.2
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
-      '@angular/core': 14.0.1_rxjs@7.5.5
+      '@angular/core': 14.1.2_rxjs@7.5.5
       rxjs: 7.5.5
       tslib: 2.4.0
     dev: true
 
-  /@angular/core/14.0.1_rxjs@7.5.5:
-    resolution: {integrity: sha512-72/VathVpDVEIm/T87eGF9Ng9JYOfrRVJCGhPwKvbIQZzCrg07acPwjDvtifkhKEKyMxLXv+F3bClr8WYP6c4Q==}
+  /@angular/core/14.1.2_rxjs@7.5.5:
+    resolution: {integrity: sha512-7DkeMYxXaWiUN0SztsD/dUn8SYo7305sM9HtX9RCGG/pweOoIIdcRhTxyiatyVGzTuulwMs/Y/rD1Q+GsDCnow==}
     engines: {node: ^14.15.0 || >=16.10.0}
     peerDependencies:
       rxjs: ^6.5.3 || ^7.4.0
@@ -41,17 +41,17 @@ packages:
       tslib: 2.4.0
     dev: true
 
-  /@angular/forms/14.0.1_x4j7wrj2gwckj73g5cgp5mf2fu:
-    resolution: {integrity: sha512-QueehWD0ghfYw3TQS9DN62i6gnc+xLeJ6NFJ8fVfh9Ny4V9zFB24bUwBmwcIiZhkw/5G42tjcuUIDO9KlNtBbA==}
+  /@angular/forms/14.1.2_ibavr2nblubibhb7uxag5odlai:
+    resolution: {integrity: sha512-9qXbYVo3mgz7SiSZzt5y/SonccASLKr8HSLlTGwnXKHlBAWA4tgdAR5Dqs+rKpoJI8VRF29Cu76fqytl60tCVA==}
     engines: {node: ^14.15.0 || >=16.10.0}
     peerDependencies:
-      '@angular/common': 14.0.1
-      '@angular/core': 14.0.1
-      '@angular/platform-browser': 14.0.1
+      '@angular/common': 14.1.2
+      '@angular/core': 14.1.2
+      '@angular/platform-browser': 14.1.2
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
-      '@angular/common': 14.0.1_sc2cxsu4vfcn33t2tbzpvm4ohe
-      '@angular/core': 14.0.1_rxjs@7.5.5
+      '@angular/common': 14.1.2_zxu6kynelzm47wrpz4hiraa5fu
+      '@angular/core': 14.1.2_rxjs@7.5.5
       rxjs: 7.5.5
       tslib: 2.4.0
     dev: true
