@@ -1,6 +1,6 @@
 {
   "name": "@fantasy0v0/universal-frontend-utility",
-  "version": "14.1.2",
+  "version": "14.0.1",
   "description": "封装一些常用的前端方法",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
