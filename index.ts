@@ -184,3 +184,13 @@ function _formArrayValid(array: FormArray) {
     }
   }
 }
+
+/**
+ * 睡眠指定毫秒数
+ * @param millis 毫秒数
+ */
+function sleep(millis: number) {
+  return new Promise(resolve => {
+    setTimeout(resolve, millis);
+  });
+}
